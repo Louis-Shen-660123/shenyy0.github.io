@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #f0f0f0; font-size:23px; padding:21px;">
+    <br />
+    <table border="1" style="width: 888px; border-collapse: collapse;">
+        <caption style="text-align:left; font-size: 19px;">每日工作交接事項表單</caption>
+        <tr>
+            <td width="33%">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>日期</th>
+                        <td><input type="date" value="2025-07-03"></td>
+                    </tr>
+                    <tr>
+                        <th>時間</th>
+                        <td><input type="time" value="08:00"></td>
+                    </tr>
+                    <tr>
+                        <th>交班班別</th>
+                        <td>
+                            <select>
+                                <option value="0"></option>
+                                <option value="1">日班</option>
+                                <option value="2">夜班</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="33%">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>應到</th>
+                        <td><input type="number" value="6"></td>
+                    </tr>
+                    <tr>
+                        <th>實到</th>
+                        <td><input type="number" value="6"></td>
+                    </tr>
+                    <tr>
+                        <th>請假</th>
+                        <td><input type="number" value="0"></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="34%">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>交班者</th>
+                        <td><input type="text" value="傅裕鈞"></td>
+                    </tr>
+                    <tr>
+                        <th>接班者</th>
+                        <td><input type="text" value="黃曉華"></td>
+                    </tr>
+                    <tr>
+                        <th>主管簽核</th>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th width="33%">
+                            交接事項:<br />
+                            (人機料法環)
+                        </th>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <select>
+                                            <option value="0"></option>
+                                            <option value="1">人</option>
+                                            <option value="2">機</option>
+                                            <option value="3">料</option>
+                                            <option value="4">法</option>
+                                            <option value="5">環</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <textarea rows="4" cols="50" placeholder="請輸入交接事項..."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select>
+                                            <option value="0"></option>
+                                            <option value="1">人</option>
+                                            <option value="2">機</option>
+                                            <option value="3">料</option>
+                                            <option value="4">法</option>
+                                            <option value="5">環</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <textarea rows="4" cols="50" placeholder="請輸入交接事項..."></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+
+<!--
+每日工作交接事項表單
+日期:2025-07-03 D / N
+應到:6  實到:6  請假:__0___  
+交班者:傅裕鈞
+接班者:黃曉華
+主管簽核:	
+交接事項: 人機料法環
+
+Daily Work Handover Form
+
+Date: 2025-07-03 
+Shift: Day / Night
+
+Scheduled Staff: 6
+Actual Attendance: 6
+Leave Requests: 0
+
+Outgoing Staff: Fu Yu-Jun
+Incoming Staff: Huang Xiao-Hua
+
+Supervisor Approval: 
+(Signature or confirmation area)
+
+Handover Items:
+Personnel (人)
+Machines/Equipment (機)
+Materials (料)
+Methods/Processes (法)
+Environment (環)
+-->
+
+

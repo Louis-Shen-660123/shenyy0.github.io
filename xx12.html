@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #f0f0f0; font-size:23px; padding:21px;">
+    <br />
+    <input type="radio" id="xx01"  name="xx00" value="run" /><label for="xx01">run</label> &nbsp;&nbsp;&nbsp;
+    <input type="radio" id="xx02"  name="xx00" value="idle" /><label for="xx02">idle</label> &nbsp;&nbsp;&nbsp;
+    <input type="radio" id="xx03"  name="xx00" value="stop" /><label for="xx03">stop</label> &nbsp;&nbsp;&nbsp;
+
+
+    <br /><br /><br />
+
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td>
+                <select size="2">
+                    <option value="xx">run - 區隔生產</option>
+                    <option value="xx">run - 一般生產</option>
+                </select>
+            </td>
+            <td>
+                <input type="checkbox" id="xx11"  name="xx11" value="run" /><label for="xx11">首件批</label><br />
+                <input type="checkbox" id="xx12"  name="xx12" value="run" /><label for="xx12">重工</label><br />
+                <input type="checkbox" id="xx13"  name="xx13" value="run" /><label for="xx13">復機</label><br />
+                <input type="checkbox" id="xx14"  name="xx14" value="run" /><label for="xx14">校正</label>
+            </td>
+            <td>
+                料號<br />
+                批號<br />
+                Cassette數量<br />
+                投產片數 / 良品片數 / 不良品片數<br />
+            </td>
+            <td>
+                生產人數<br />
+                外來支援本機器人數<br />
+                去支援其他機器人數, 哪個機器, 工作內容<br />
+            </td>
+            <td>
+            </td>
+            <td>
+                <textarea rows="4" cols="50" placeholder="備註說明..."></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select size="15">
+                    <option value="xx">idle - 品質異常處理</option>
+                    <option value="xx">idle - 等量測 - 首件</option>
+                    <option value="xx">idle - 等量測 - 一般</option>
+                    <option value="xx">idle - 等Cassette</option>
+                    <option value="xx">idle - 換批號</option>
+                    <option value="xx">idle - 換料號</option>
+                    <option value="xx">idle - 全線參數確認</option>
+                    <option value="xx">idle - 參數確認</option>
+                    <option value="xx">idle - 參數調整</option>
+                    <option value="xx">idle - 換治具</option>
+                    <option value="xx">idle - 換光罩</option>
+                    <option value="xx">idle - 等ETCH液位補充</option>
+                    <option value="xx">idle - 倉庫庫位調整</option>
+                    <option value="xx">idle - 等確認-廠務,製程</option>
+                    <option value="xx">idle - 清潔機器,環境</option>
+                    <option value="xx">idle - 等工單</option>   
+                </select>
+                <br />
+                等環境確認: 等硝酸濃度確認, 廠務進廠檢查水壓, 製程檢查腔體
+            </td>
+            <td>
+            </td>
+            <td>
+                料號<br />
+                批號<br />
+            </td>
+            <td>
+                機器參數調整人<br />
+                <br /><br /><br />
+                生產人數<br />
+                外來支援本機器人數<br />
+                去支援其他機器人數, 哪個機器, 工作內容<br />
+            </td>
+            <td>
+            </td>
+            <td>
+                <textarea rows="4" cols="50" placeholder="備註說明..."></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select size="8">
+                    <option value="xx">stop - 品質異常, 檢修</option>
+                    <option value="xx">stop - 生產異常, 檢修</option>
+                    <option value="xx">stop - 倉庫異常, 檢修</option>
+                    <option value="xx">stop - 機器異常, 檢修</option>
+                    <option value="xx">stop - 機器排程保養</option>
+                    <option value="xx">stop - 停電, 跳電</option>
+                    <option value="xx">stop - 網路中斷</option>
+                    <option value="xx">stop - 員工休假</option>
+                    <option value="xx">stop - 無工單</option>
+                </select>
+            </td>
+            <td>
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                機器檢修人<br />
+                機器參數調整人<br />
+                <br /><br /><br />
+                生產人數<br />
+                外來支援本機器人數<br />
+                去支援其他機器人數, 哪個機器, 工作內容<br />
+            </td>
+            <td>
+            </td>
+            <td>
+                <textarea rows="4" cols="50" placeholder="備註說明..."></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!--
+    <br /><br /><br />
+    料號<br />
+    批號<br />
+    Cassette數量<br />
+    投產片數 / 良品片數 / 不良品片數<br />
+
+    <br /><br /><br />
+    生產人數<br />
+    外來支援本機器人數<br />
+    去支援其他機器人數, 哪個機器, 工作內容<br />
+
+    <br /><br /><br />
+    機器檢修人<br />
+    機器參數調整人<br />
+
+  
+    <br /><br /><br />
+    <textarea rows="4" cols="50" placeholder="備註說明...">
+特殊事件紀錄(任何可能影響品質的事件)
+特殊調整參數紀錄, 
+    </textarea>
+
+
+
+    python 程式 - pattern分類
+
+
+畫面 - 機, 人, 料, (法, 環, 測)
+
+機 - run, idle, stop - 
+  run - 區隔生產
+  run - 一般生產
+  run ?? 首件批? 復機? 校正?
+
+  idle - 換料號
+  idle - 換批號
+  idle - 換Cassette
+  idle - 參數調整
+  idle - 整理機器
+  idle - 量測 - 首件
+  idle - 量測 - 一般
+
+  stop - 品質異常, 檢修(外觀不良)
+  stop - 生產異常, 檢修(破片)
+  stop - 機器異常, 檢修
+  stop - 機器排程保養
+  stop - 停電, 跳電
+  stop - 網路中斷
+  stop - 假日
+  
+  特殊事件紀錄(任何可能影響品質的事件)
+  特殊調整參數紀錄, 
+
+
+
+人 - 生產, 支援, 維修 - 人名, 人數
+
+料 - 生產中的料號, 批號, 數量, 生產結果, 重工
+
+
+
+
+-->
+
+
