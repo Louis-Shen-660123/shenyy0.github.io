@@ -20,20 +20,23 @@
 //document.getElementById('xx11').textContent = "5 * 7 = ";
 //document.getElementById('xx12').textContent = "35";
 
-var secInterval = 7;
+var secInterval = 6000;
+var secTimeout = 3000;
 var v1 = 3;
 var v2 = 7;
 
 function updateTdText() {
   v1 = Math.floor(Math.random() * 9) + 1;
   v2 = Math.floor(Math.random() * 9) + 1;
-  document.getElementById('myTd').textContent = v1 + " x " + v2 + " = ";
+  document.getElementById('xx11').textContent = v1 + " x " + v2 + " = ";
+  setTimeout(function() {document.getElementById('xx11').textContent = v1 * v2;}, secTimeout);
 }
 
 updateTdText();
 alert(123);
-setInterval(updateTdText, 5000);
+setInterval(updateTdText, secInterval);
 
 </script>
+
 
 
