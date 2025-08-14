@@ -5,13 +5,13 @@
 
 <table>
 <tr>
-<td id='xx11'>
+<td id='xx11' style="font-size:36px;">
 </td>
-<td id='xx12'>
+<td id='xx12' style="font-size:36px; color:blue;">
 </td>
 </tr>
 </table>
-  11122aa
+
 
 </body>
 </html>
@@ -29,7 +29,8 @@ function updateTdText() {
   v1 = Math.floor(Math.random() * 9) + 1;
   v2 = Math.floor(Math.random() * 9) + 1;
   document.getElementById('xx11').textContent = v1 + " x " + v2 + " = ";
-  setTimeout(function() {document.getElementById('xx12').textContent = v1 * v2;}, secTimeout);
+  document.getElementById('xx12').textContent = "";
+  setTimeout(function() {document.getElementById('xx12').textContent = v1 * v2 + "";}, secTimeout);
 }
 
 updateTdText();
@@ -37,6 +38,7 @@ alert(123);
 setInterval(updateTdText, secInterval);
 
 </script>
+
 
 
 
