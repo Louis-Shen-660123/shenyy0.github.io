@@ -16,7 +16,19 @@
 </html>
 
 <script>
-document.getElementById('xx11').textContent = "5 * 7 = ";
-document.getElementById('xx12').textContent = "35";
+//document.getElementById('xx11').textContent = "5 * 7 = ";
+//document.getElementById('xx12').textContent = "35";
+
+var secInterval = 7;
+var v1 = 3;
+var v2 = 7;
+
+function updateTdText() {
+  v1 = Math.floor(Math.random() * 9) + 1;
+  v2 = Math.floor(Math.random() * 9) + 1;
+  document.getElementById('myTd').textContent = v1 + " x " + v2 + " = ";
+}
+
+setInterval(updateTdText, 5000);
 
 </script>
