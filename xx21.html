@@ -1,29 +1,12 @@
 <html>
 <head>
-</head>
-<body>
-  <br ><br ><br >
-<table style="">
-<tr>
-<td id='xx11' style="width:75%; font-size:200px;">
-</td>
-<td id='xx12' style="width:25%; font-size:200px; color:blue;">
-</td>
-</tr>
-</table>
-</body>
-</html>
 <script>
-//document.getElementById('xx11').textContent = "5 * 7 = ";
-//document.getElementById('xx12').textContent = "35";
-
-var secInterval = 4 *1000;
-var secTimeout = 2 * 1000;
+var secTimeout1 = 1700;
+var secTimeout2 = 1900;
 var v1 = 3;
 var v2 = 7;
+window.onload = updateTdText;
 
-//alert(v1 + " x " + v2 + " = " + (v1 * v2));
-  
 function updateTdText() {
   v1 = Math.floor(Math.random() * 9) + 1;
   v2 = Math.floor(Math.random() * 9) + 1;
@@ -32,19 +15,19 @@ function updateTdText() {
     updateTdText();
     return;
   }
-  document.getElementById('xx11').textContent = v1 + " x " + v2 + " = ";
+  document.getElementById('xx11').textContent = "";
   document.getElementById('xx12').textContent = "";
-  setTimeout(function() {document.getElementById('xx12').textContent = " " + (v1 * v2) + "";}, secTimeout);
+  document.getElementById('xx11').textContent = v1 + " x " + v2 + " = ";
+  setTimeout(function() {document.getElementById('xx12').textContent = " " + (v1 * v2) + ""; setTimeout(updateTdText, secTimeout1);}, secTimeout2);
 }
-
-updateTdText();
-setInterval(updateTdText, secInterval);
-
 </script>
-
-
-
-
-
-
-
+</head>
+<body>
+<br ><br ><br >
+<span id='xx11' style="width:75%; font-size:195px;"></span>
+<span id='xx12' style="width:25%; font-size:200px; color:blue;"></span>
+</td>
+</tr>
+</table>
+</body>
+</html>
