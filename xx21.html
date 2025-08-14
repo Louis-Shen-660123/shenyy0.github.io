@@ -20,14 +20,19 @@
 //document.getElementById('xx11').textContent = "5 * 7 = ";
 //document.getElementById('xx12').textContent = "35";
 
-var secInterval = 6000;
-var secTimeout = 3000;
+var secInterval = 5 *1000;
+var secTimeout = 3 * 1000;
 var v1 = 3;
 var v2 = 7;
 
 function updateTdText() {
   v1 = Math.floor(Math.random() * 9) + 1;
   v2 = Math.floor(Math.random() * 9) + 1;
+  if(v1 ==1 || v2 ==1)
+  {
+    updateTdText();
+    return;
+  }
   document.getElementById('xx11').textContent = v1 + " x " + v2 + " = ";
   document.getElementById('xx12').textContent = "";
   setTimeout(function() {document.getElementById('xx12').textContent = v1 * v2 + "";}, secTimeout);
@@ -38,6 +43,7 @@ alert(v1 + " x " + v2 + " = " + (v1 * v2));
 setInterval(updateTdText, secInterval);
 
 </script>
+
 
 
 
